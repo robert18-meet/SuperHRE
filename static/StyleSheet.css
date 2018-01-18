@@ -1,0 +1,67 @@
+body
+{
+ background-color : #6699ff;
+}
+.menu-pos
+{
+	position: absolute;
+	left:470px;
+	top:160px;
+}
+.login-pos
+{
+	position: absolute;
+	left:20px;
+	top:60px;
+	border: 3px solid #000000;
+}
+.registerException
+{
+	position: absolute;
+	left:145px;
+	top:217px;
+}
+.minigame
+{
+	position: absolute;
+	left: 970px;
+	top:240px;
+}
+.explanation
+{
+	position: absolute;
+	left:480px;
+	top:60px;
+}
+.explanationException
+{
+	position: absolute;
+	left: 540px;
+	top:130px;
+}
+.about-us
+{
+	position: absolute;
+	left:20px;
+	top:300px;
+	border:3px solid #000000;
+}
+.our-vision
+{
+	position: absolute;
+	left: 450px;
+	top:300px;
+	border:3px solid #000000;
+}
+.cp
+{
+	position: absolute;
+	left:430px;
+	top:600px;
+}
+.register-pos
+{
+	position: absolute;
+	left:300px;
+	top:50px;
+}

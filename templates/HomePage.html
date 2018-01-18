@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Super Guitar Hero Chords</title>
+    <!--include headers-->
+    <!-- #include Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--finish #include Bootstrap-->
+    <!--#include CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='StyleSheet.css') }}">
+    <!--finish #include CSS-->
+    <!--finish include headers-->
+
+  </head>
+
+  <body>
+    <!--Start-->
+    <div class = "container" >
+    <!--Starting Bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{url_for('homepage')}}">Super Hero Guitar Hero</a>
+        </div>
+      </div>
+    </nav>
+    <!--Finishing Bar-->
+  <!--Starting Login/Register-->
+  <br><br>
+  <div class = "login-pos">
+  <h3>Not Logged in Yet?!</h3>
+  <form class="form-horizontal" action= "{{ url_for('homepage') }}" method="post">
+  <div class="form-group">
+  <label class="control-label col-sm-3" for="Username">Username:</label>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="Username" placeholder="Enter Username" name="Username">
+  </div>
+  </div>
+  <div class="form-group">
+  <label class="control-label col-sm-3" for="Password">Password:</label>
+  <div class="col-sm-6">          
+  <input type="password" class="form-control" id="Password" placeholder="Enter Password" name="Password">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-default">Log In</button>
+  </form>
+  </div>
+  <div class = "registerException">
+  <div class="col-sm-offset-0 col-sm-10">
+  <a href="{{url_for('Register')}}" class="btn btn-default" role="button">Register</a>
+  </div>
+  </div>
+  <!--Finishing Login/Register-->
+  <!--Starting Options-->
+  <div class = "menu-pos">
+  <a href="{{url_for('Songs')}}" class="btn btn-default" role="button">Songs</a>
+  </div>
+  <div class = "minigame">
+  <a href="{{url_for('Minigame')}}" class="btn btn-default" role="button">Minigame</a>
+  </div>
+  <!--Finishing Options-->
+  <!--Starting menu buttons and explanations about it-->
+  <div class = "explanation">
+  <h3>SuperGuitarHeroChords presents two main fearures!</h3>
+  <br>
+  </div>
+  <div class = "explanationException">
+  <p>In here you can find all the songs that exists in this site! ( ͡° ͜ʖ ͡°)</p>
+  <p><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<</p>
+  <br>
+  <p>In here you can play a minigame. You can use it as a practice tool!</p>
+  <p>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></p>
+  </div>
+  <!--About us paragraph-->
+  <div class="about-us">
+  <h3>About Us</h3>
+  <p>My name is Robert Kostrov, I am a Y2 student.<br>This is my personal project, and the topic is guitar.</p>
+  <p>I am playing guitar for 2 years <br> and I always wanted to create something which will support me ;).</p>
+  <p>Hope you will enjoy the functionality<br> and the content presented in-it. Have Fun ;)</p>
+  </div>
+  <!--Finishing about us paragraph-->
+  <!--Our Vision paragraph-->
+  <div class = "our-vision">
+  <h3>Our Vision</h3>
+  <p>My vision is to create a site which will help beginners not to drop out of learning guitar.<br> Guitar seems pretty hard at the start which gives us a feeling that we will never succeed in it.</p>
+  <p>Other websites pretty complicated and has too much explanations<br>, easy to get messed up with. My website is also providing professional content which can be useful for pros!</p>
+  </div>
+  <!--Finishing our vision paragraph-->
+  <!--Copyrights-->
+  <div class = "cp">
+  <p>Robert Kostrov - Josh Gaming - Inc.</p>
+  </div>
+  <!--Finishing copyrights-->
+  <!--Container ends here! don't code after it.-->  
+  </div>
+    <!--End-->
+  </body>
