@@ -1,4 +1,9 @@
-from FlaskRouter import *
+from flask import Flask
+from flask import render_template
+from flask import url_for
+from flask import request
+from DB import *
+app = Flask(__name__)
 
 @app.route('/', methods=["GET","POST"])
 def homepage():
@@ -29,3 +34,7 @@ def Minigame():
 @app.route('/Songs')
 def Songs():
 	return render_template('Songs.html')  
+
+
+if __name__ == '__main__':
+	app.run(debug=True)
