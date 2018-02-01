@@ -28,7 +28,12 @@
       </div>
     </nav>
     <!--Finishing Bar-->
-  <!--Starting Login/Register-->
+    <!-->Song-List<-->
+    <div class="list-group">
+    {%for Songi in getList%}
+      <a href={{Songi.URL}} class="list-group-item">{{Songi.name}}</a>
+    {%endfor%}
+    </div>
   <!--Copyrights-->
   <div class = "cp">
   <p>Robert Kostrov - Josh Gaming - Inc.</p>

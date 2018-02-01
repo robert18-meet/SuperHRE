@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
   <head>
     <title>Super Guitar Hero Chords</title>
     <!--include headers-->
@@ -13,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='StyleSheet.css') }}">
     <!--finish #include CSS-->
     <!--finish include headers-->
-
   </head>
 
   <body>
@@ -32,6 +30,18 @@
     <h3>Hello there, {{nick}}</h3>
     <br>
     <a href="/" class="btn btn-default" role="button">Log Out</a>
+    <h3>Put URL of chords to insert it</h3>
+    <form class="form-horizontal" action= "{{ url_for('LoggedIn') }}" method="post">
+    <div class="col-sm-3">
+    <input type="text" class="form-control" id="URL" placeholder="URL" name="URL">
+    </div>
+    <br><br><br>
+    <div class="col-sm-3">
+    <input type="text" class="form-control" id="Name" placeholder="Name" name="Name">
+    </div>
+    <button type="submit" class="btn btn-default">Post</button>
+    </form>
+
   <!--Starting Options-->
   <div class = "menu-pos">
   <a href="{{url_for('Songs')}}" class="btn btn-default" role="button">Songs</a>
@@ -51,20 +61,6 @@
   <br>
   <p>In here you can play a minigame. You can use it as a practice tool!</p>
   <p>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></p>
-  </div>
-  <!--About us paragraph-->
-  <div class="about-us">
-  <h3>About Us</h3>
-  <p>My name is Robert Kostrov, I am a Y2 student.<br>This is my personal project, and the topic is guitar.</p>
-  <p>I am playing guitar for 2 years <br> and I always wanted to create something which will support me ;).</p>
-  <p>Hope you will enjoy the functionality<br> and the content presented in-it. Have Fun ;)</p>
-  </div>
-  <!--Finishing about us paragraph-->
-  <!--Our Vision paragraph-->
-  <div class = "our-vision">
-  <h3>Our Vision</h3>
-  <p>My vision is to create a site which will help beginners not to drop out of learning guitar.<br> Guitar seems pretty hard at the start which gives us a feeling that we will never succeed in it.</p>
-  <p>Other websites pretty complicated and has too much explanations<br>, easy to get messed up with. My website is also providing professional content which can be useful for pros!</p>
   </div>
   <!--Finishing our vision paragraph-->
   <!--Copyrights-->
